@@ -54,12 +54,13 @@ h3 {
 
 p {
   margin: 0.25em;
+  font-size: 1.25em;
   font-family: var(--body-font);
 }
 
 .intro {
   text-align: center;
-  max-width: 80ch;
+  max-width: 51vw;
 
   margin-left: auto;
   margin-right: auto;
@@ -68,6 +69,7 @@ p {
 }
 
 hr {
+  width: 80vw;
   max-width: 80ch;
   color: black;
   border: none;
@@ -88,7 +90,8 @@ hr {
 }
 
 dl {
-  margin: 1em;
+  margin: 1rem;
+  font-size: 1.1em;
   font-family: var(--body-font);
 }
 
