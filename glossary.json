@@ -1,0 +1,432 @@
+[
+  {
+    "term": "Analog vs. Digital",
+    "definition": "The best example of this is in the clock differences. Analog means being progressive with infinitely small spaces between values (continuously variable), and digital means being variable in discrete increments, also being two states such as black and white, on or off, or yes or no.",
+    "chapter": 1
+  },
+  {
+    "term": "Positional Numbering Systems",
+    "definition": "This refers to the digits of our counting system. Normally we use decimal (0-9), though it is common in IT to use Hex (0-F) and Binary (0-1). It refers specifically to the fact that the position of a digit is what gives it value, in addition to the value of the digit. For instance, in the number 3,693, the left 3 has 1,000 times more value than the 3 on the right, because of its position. Both binary and decimal are examples of positional numbering systems.",
+    "chapter": 1
+  },
+  {
+    "term": "Bit",
+    "definition": "A 'binary digit'. This is the smallest unit of data in a computer. It is represented in binary (0-1).",
+    "chapter": 1
+  },
+  {
+    "term": "Nibble",
+    "definition": "Half of a byte, or 4 Bits.",
+    "chapter": 1
+  },
+  {
+    "term": "Byte",
+    "definition": "A block of information made up of 8 bits.",
+    "chapter": 1
+  },
+  {
+    "term": "Most Significant Bit (MSB)",
+    "definition": "The binary digit furthest to the left. When true it creates the biggest difference to the value because binary (like decimal) is also a positional numbering system.",
+    "chapter": 1
+  },
+  {
+    "term": "Least Significant Bit (LSB)",
+    "definition": "The binary digit to the furthest right. When true it will only change the end value by 1, the smallest integer amount possible to change a number.",
+    "chapter": 1
+  },
+  {
+    "term": "Binary-Coded Decimal (BCD)",
+    "definition": "This is another way to represent numbers. This method is commonly used in conversions between Hex and binary and functions based on 4 bits representing 1 number.",
+    "chapter": 2
+  },
+  {
+    "term": "ASCII",
+    "definition": "American Standard Code for Information Interchange. ASCII code is used to represent text including punctuation, letters, numbers and accent marks. ASCII uses a 7-bit code, or Hex for each specific character. ASCII is now a subset of Unicode.",
+    "chapter": 2
+  },
+  {
+    "term": "Grey Code",
+    "definition": "Code in which each new binary group is only one bit different from the last. This is used in K-Maps.",
+    "chapter": 2
+  },
+  {
+    "term": "Truth Tables",
+    "definition": "Used to study Boolean Logic as well as in exhaustive proofs. A table usually with two sides, with the left side being inputs and the right side being outputs. Used in K-Maps and logic gate schematics as well.",
+    "chapter": 2
+  },
+  {
+    "term": "Boolean Logic",
+    "definition": "A study of formal logic, focusing on true and false (two values) logic. There are many names for the pieces of logic (yes/no, on/off, 1/0). Equations will use Boolean Operators and variables to make true statements. There is an associated set of theorems and identities used to help minimize the length and redundancy of Boolean expressions.",
+    "chapter": 2
+  },
+  {
+    "term": "Turing Machine",
+    "definition": "Designed by Alan Turing in 1937, a Turing machine in a mathematical model of a device that can perform any computation.",
+    "chapter": 1
+  },
+  {
+    "term": "Data Type",
+    "definition": "A representation of data as well as the operations that can be performed on the data. Examples: Unsigned Integers, Signed Integers, Real Numbers, Text characters, Booleans, BCD, ASCII, binary, floating point.",
+    "chapter": 2
+  },
+  {
+    "term": "Signed Numbers",
+    "definition": "Binary numbers with values giving specifically positive or negative signs. These must be specifically stated, otherwise we cannot be sure what signs they have.",
+    "chapter": 2
+  },
+  {
+    "term": "Overflow",
+    "definition": "Values that are outside of the viewable set of numbers.  Can occur when shifting, adding, or multiplying normally. If the sum of two binary numbers uses more bits than what has been allotted, overflow occurs, and the MSB is carried out, resulting in an incorrect sum.",
+    "chapter": 2
+  },
+  {
+    "term": "Sign Magnitude",
+    "definition": "Converting the position of the MSB to a sign placeholder, 1 being negative (-) and 0 being positive (+).",
+    "chapter": 2
+  },
+  {
+    "term": "2's Complement",
+    "definition": "A method of representing negative numbers, achieved by inverting all of the bits in a number and adding 1 to the LSB. This method is only for negative numbers; positive numbers are expressed normally.",
+    "chapter": 2
+  },
+  {
+    "term": "Boolean Operators",
+    "definition": "AND, OR, NOT, XOR",
+    "chapter": 2
+  },
+  {
+    "term": "AND",
+    "definition": "C is true only if A and B are also true, Can also be thought of as a series circuit.",
+    "chapter": 2
+  },
+  {
+    "term": "OR",
+    "definition": "C is true if either A or B or both are true. Can also be thought of as a parallel circuit.",
+    "chapter": 2
+  },
+  {
+    "term": "NOT",
+    "definition": "Returns the opposite of whatever value it is given. Also called an inverter.",
+    "chapter": 2
+  },
+  {
+    "term": "NAND",
+    "definition": "C is true when A, B, or both are false.",
+    "chapter": 2
+  },
+  {
+    "term": "NOR",
+    "definition": "C is false when either A or B is true.",
+    "chapter": 2
+  },
+  {
+    "term": "XOR",
+    "definition": "C is only true if either A or B is true, but not both.",
+    "chapter": 2
+  },
+  {
+    "term": "XNOR",
+    "definition": "C is only false if either A or B is true, but not both",
+    "chapter": 2
+  },
+  {
+    "term": "DeMorgan's Laws",
+    "definition": "If we NOT two input values (A and B), AND them, and then NOT the result, we get the same result as an OR operation. The same is true going in reverse: if we NOT two input values (A and B), OR them, and then NOT the result, we get the same result as an AND operation.",
+    "chapter": 2
+  },
+  {
+    "term": "Terms",
+    "definition": "Variables in a Boolean expression or equation which represent an input or output (i.e. A, B, F).",
+    "chapter": 2
+  },
+  {
+    "term": "Sum of Products (SOP)",
+    "definition": "Refers to two-level logic in which the terms are first products (ANDed), then the products are summed (ORed) together. An example would be:  F=AB’+A’B.",
+    "chapter": 2
+  },
+  {
+    "term": "Product of Sums (POS)",
+    "definition": "Refers to two-level logic in which the terms are first sums (ORed), then the sums are multiplied (ANDed) together. An example would be:  F’=(A’+B’)+(A+B).",
+    "chapter": 2
+  },
+  {
+    "term": "Minterm Expansion",
+    "definition": "The SOP way of writing the minimal expression for a Boolean equation. This should consist of all terms that are true.",
+    "chapter": 2
+  },
+  {
+    "term": "Maxterm Expansion",
+    "definition": "The POS way of expressing a minimal expression in a Boolean equation. These terms will be all of the false outputs for the given inputs.",
+    "chapter": 2
+  },
+  {
+    "term": "Boolean Minimal Expressions",
+    "definition": "These are equations with the fewest necessary terms and will either be in minterm or maxterm form. The opposite of the equation will be the opposite form of expressing the equation.",
+    "chapter": 2
+  },
+  {
+    "term": "Bubble Matching",
+    "definition": "A strategy for complying to a logic set that limits what types of gates you can use and how they are depicted in the schematic. One example would be using NOR - Invert-AND (NOR – NOR) instead of an OR-AND.",
+    "chapter": 2
+  },
+  {
+    "term": "Grey Code",
+    "definition": "Code in which each new binary group is only one bit different from the last. This is used in K-Maps.",
+    "chapter": 2
+  },
+  {
+    "term": "Delay",
+    "definition": "The time from when a change enters a logic gate until that change propagates through the gate to the output.",
+    "chapter": 2
+  },
+  {
+    "term": "Critical Path",
+    "definition": "There are often multiple paths through the transistors of a logic gate; the path that takes the longest in a given condition is the critical path.",
+    "chapter": 2
+  },
+  {
+    "term": "Input Glitches",
+    "definition": "Momentary and undesired transitions in the data on the input to a logic gate or storage element.",
+    "chapter": 2
+  },
+  {
+    "term": "Transistors",
+    "definition": "The building blocks of gates. These are pieces of hardware that can pass high or low current. These are used in creating logic gates which implement the Boolean operators. Logically, each transistor acts as a voltage-controlled switch.",
+    "chapter": 3
+  },
+  {
+    "term": "P-type Transistors",
+    "definition": "In CMOS, it is the transistor whose source is connected to +3.0V. When the gate is 1, the transistor is off. When the gate is 0, the transistor is on.",
+    "chapter": 3
+  },
+  {
+    "term": "N-type Transistors",
+    "definition": "In CMOS, it is the transistor whose drain is connected to 0V. When the gate is 1, the transistor is on. When the gate is 0, the transistor is off.",
+    "chapter": 3
+  },
+  {
+    "term": "Gates",
+    "definition": "These use Boolean logic in order to create desired outputs. They come in several different forms, though we deal primarily with AND, OR, NOT, NAND, NOR and XOR. Normally one gate will have 1-4 inputs, with a single output.",
+    "chapter": 3
+  },
+  {
+    "term": "Counters",
+    "definition": "A circuit that counts through a predefined sequence. Uses flip flops or latches to hold current state, and uses input forming logic to predict its next state. Outputs are clocked.",
+    "chapter": 3
+  },
+  {
+    "term": "Multilevel Logic",
+    "definition": "This is referring to the amount of layers in a schematic design. Example: 2 NAND gates feeding into an OR gate would be 2-level logic.",
+    "chapter": 3
+  },
+  {
+    "term": "Schematic",
+    "definition": "In IT this will almost always refer to a diagram of a group of connected gates, multiplexers, counters… etc., showing how they are connected.",
+    "chapter": 3
+  },
+  {
+    "term": "Functionally Complete Set",
+    "definition": "A collection of gates that are needed to implement any set of logic. NAND and NOR gates, for example, can perform any sort of logic and therefore constitute a functionally complete set by themselves.",
+    "chapter": 3
+  },
+  {
+    "term": "Combinational Logic",
+    "definition": "A circuit which requires only its current state inputs to execute a function.",
+    "chapter": 3
+  },
+  {
+    "term": "Sequential Logic",
+    "definition": "A circuit which requires both current state and former state inputs to execute a function. Requires storage element (memory).",
+    "chapter": 3
+  },
+  {
+    "term": "Multiplexer (MUX)",
+    "definition": "A circuit with at least one input being a selector, allowing the output to be connected to the selected input.",
+    "chapter": 3
+  },
+  {
+    "term": "Decoders",
+    "definition": "These work in the opposite way to mux circuits. Decoders will take a few inputs and output more. Such as inputting 2, and outputting 4.",
+    "chapter": 3
+  },
+  {
+    "term": "Read Only Memory (ROM)",
+    "definition": "A type of memory that stores data that can only be read but not altered. Commonly used for Lookup Tables.",
+    "chapter": 3
+  },
+  {
+    "term": "Adder",
+    "definition": "At the bit level, there are quarter adders, half adders and full adders. At the multi-bit level, there are ripple adders and look-ahead adders, all of which combine various binary adders together. Ripple adders and look-ahead adders will carry the values through multiple bit-level adders. Adders can be used as subtractors if they add negative numbers.",
+    "chapter": 3
+  },
+  {
+    "term": "Latches",
+    "definition": "A level-sensitive digital storage element. There are many different variations such as SR, Gated, or Master/Slave. Latches will respond to their inputs, and usually provide both the true and the complement of the output.",
+    "chapter": 3
+  },
+  {
+    "term": "Flip-Flops (FF)",
+    "definition": "An edge-sensitive digital storage element. Used in computer registers and sequential logic, and made with gates and transistors.",
+    "chapter": 3
+  },
+  {
+    "term": "Rising/Falling Edge",
+    "definition": "A term referring to the clock of a sequential logic storage element such as a flip-flop or a latch, simply meaning the change when the clock goes high or low, being rising and falling accordingly.",
+    "chapter": 3
+  },
+  {
+    "term": "Address Space",
+    "definition": "The number of locations in memory, usually a power of 2.",
+    "chapter": 3
+  },
+  {
+    "term": "Addressability",
+    "definition": "The number of bits per location.",
+    "chapter": 3
+  },
+  {
+    "term": "Register",
+    "definition": "Storage (one or more) used to hold a value in a computer or microprocessor. Variations include shift registers, flip flops and latches. A register is typically the fastest storage element.",
+    "chapter": 3
+  },
+  {
+    "term": "State",
+    "definition": "The state of a system is a snapshot of all the relevant data that describes the system.",
+    "chapter": 3
+  },
+  {
+    "term": "State Diagram",
+    "definition": "Shows all states (nodes), output value for each state (value in node), transitions (edges) between states for input values (edge labels).",
+    "chapter": 3
+  },
+  {
+    "term": "State Graph",
+    "definition": "A visual representation of the flow and conditions of a state machine. These can include inputs and outputs, normally accompanied by a truth table.",
+    "chapter": 3
+  },
+  {
+    "term": "Finite State Machine",
+    "definition": "An abstract model for circuitry that changes its states as a function of the present state and the inputs, and which provides outputs which correspond to their respective states.",
+    "chapter": 3
+  },
+  {
+    "term": "K-Maps",
+    "definition": "Karnaugh Maps let us represent the inputs and outputs of a truth table in a way that allows us to see the patterns. By placing the outputs within the squares, you can more easily determine the minimal expression of an equation. The inputs are written in grey code, meaning that the positions (which are used in Min/Maxterm expressions) will not be in an easily predictable order.",
+    "chapter": 3
+  },
+  {
+    "term": "Don't Cares",
+    "definition": "These are outputs in KMaps that do not need to be true or false in order to function. They are included with true outputs when convenient, though they are not necessary.",
+    "chapter": 3
+  },
+  {
+    "term": "von Neumann Model",
+    "definition": "The basic computer model first proposed in the 1940’s. It consists of five parts: memory, a processing unit, input, output, and a control unit.",
+    "chapter": 4
+  },
+  {
+    "term": "Instruction Cycle",
+    "definition": "Not to be confused with the clock cycle, the instruction cycle is the sequence of six steps required to process an instruction. The steps are fetch, decode, evaluate address, fetch operands, execute, and store result.",
+    "chapter": 4
+  },
+  {
+    "term": "Recursion",
+    "definition": "A technique in which a function can call itself.",
+    "chapter": 5
+  },
+  {
+    "term": "Stack",
+    "definition": "A first-in last-out (FILO) or last-in first-out (LIFO) data structure.",
+    "chapter": 5
+  },
+  {
+    "term": "Queue",
+    "definition": "A first-in first-out (FIFO) data structure.",
+    "chapter": 5
+  },
+  {
+    "term": "Label",
+    "definition": "A symbolic name used to identify memory locations that are referred to explicitly in the program.",
+    "chapter": 5
+  },
+  {
+    "term": "Subroutine",
+    "definition": "A portion of code that can be invoked multiple times within the same program without having to specify its details in the source program each time it is used. Also called procedures or functions.",
+    "chapter": 5
+  },
+  {
+    "term": "Privilege",
+    "definition": "The right to do something, such as execute a particular instruction or access a particular memory location.",
+    "chapter": 5
+  },
+  {
+    "term": "Priority",
+    "definition": "The urgency of a program to execute. Each program is assigned a priority, specifying its urgency compared to all other programs.",
+    "chapter": 5
+  },
+  {
+    "term": "Voltage (E)",
+    "definition": "Named after Alessandro Volta, Voltage (E) is the force that causes electrons to want to move, and thus often also referred to as electro-motive force. Can be produced by batteries, rubbing, and by generators. Measured in volts (V).",
+    "chapter": 0
+  },
+  {
+    "term": "Current (I)",
+    "definition": "The flow of electrons. Measured in Amperes (A), named after André Marie Ampére. Often shortened to Amps. 1 Amp = 1 Coulomb/sec, where 1 Coulomb ≈ 6.241x10<sup>18</sup> electrons.",
+    "chapter": 0
+  },
+  {
+    "term": "Resistance (R)",
+    "definition": "Opposition to electron flow. Measured in Ohms (Ω), named after Georg Ohm.",
+    "chapter": 0
+  },
+  {
+    "term": "Power (P)",
+    "definition": "Energy per unit time. The product of the current (I) and the voltage (E). Measured in Watts (W). 1W = 1 Joule/sec.",
+    "chapter": 0
+  },
+  {
+    "term": "Frequency (f)",
+    "definition": "Cycles per second. Measured in Hertz (Hz). Prior to 1960, the units were cps (cycles per second).",
+    "chapter": 0
+  },
+  {
+    "term": "Ohm's Law",
+    "definition": "The amount of current that flows is directly proportional to the voltage, and inversely proportional to the resistance.  (I = E/R).",
+    "chapter": 0
+  },
+  {
+    "term": "Ampacity",
+    "definition": "The maximum current that an electric power source can deliver. For example, in batteries, the larger the surface area of a battery, the greater the ampacity and the lower the internal resistance of that battery.",
+    "chapter": 0
+  },
+  {
+    "term": "Parallel Circuit",
+    "definition": "A circuit which comprises branches so that the current divides and only part of it flows through any branch. All elements in the circuit have the same voltage drop, and each resistor drops all of the total voltage.",
+    "chapter": 0
+  },
+  {
+    "term": "Series Circuit",
+    "definition": "A circuit which comprises a path along which the whole current flows through each component. Each resistor drops only a portion of the total voltage.",
+    "chapter": 0
+  },
+  {
+    "term": "Precision",
+    "definition": "Another word for repeatability. Measured in percentages or ppm, a low value is desired.",
+    "chapter": 0
+  },
+  {
+    "term": "Accuracy",
+    "definition": "Defined as how close a given measurement is to the known or actual value. Measured in percentage or ppm; a low value is desired.",
+    "chapter": 0
+  },
+  {
+    "term": "Resolution",
+    "definition": "The resolution of a meter specifies the smallest part it can resolve, and is specified in %, ppm, ppb, or # of digits. Most common resolution is 1 part out of 2000, or 500 ppm, or 3½ digits.",
+    "chapter": 0
+  },
+  {
+    "term": "Unicode",
+    "definition": "The original Unicode Standard used 2 bytes/character, and was thus able to represent 65,536 characters. It includes 7-bit ASCII as a subset. The most recent version of Unicode uses 18 bits, but only about 144,000 of the possible 262,144 (2<sup>18</sup>) characters are presently defined.",
+    "chapter": 1
+  }
+]

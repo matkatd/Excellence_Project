@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Baskerville;
+  src: url("./Baskerville.ttc");
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("./Futura.ttc");
+}
+
+:root {
+  --header-font: Futura;
+  --body-font: Baskerville;
+  --background-color: #b4e494;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  max-width: 1080px;
+  background-color: var(--background-color);
+}
+
+h1 {
+  text-align: center;
+  padding: 1em 0.5em;
+
+  margin: 0.25em auto;
+  width: 60vw;
+  max-width: 800px;
+  background-color: white;
+  font-family: var(--header-font);
+  font-weight: 500;
+  font-size: 3em;
+}
+
+h2 {
+  margin: 1em 0.25em;
+  text-align: center;
+  font-family: var(--header-font);
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h3 {
+  margin: 1em;
+  font-family: var(--header-font);
+}
+
+p {
+  margin: 0.25em;
+  font-family: var(--body-font);
+}
+
+.intro {
+  text-align: center;
+  max-width: 80ch;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  line-height: 1.5em;
+}
+
+hr {
+  max-width: 80ch;
+  color: black;
+  border: none;
+  height: 2px;
+  background-color: black;
+}
+
+.glossary {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+dl {
+  margin: 1em;
+  font-family: var(--body-font);
+}
+
+dt {
+  margin: 1em 0.25em 0 0.25em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 2em;
+  }
+}
