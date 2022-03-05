@@ -1,4 +1,4 @@
-import DataService from "./dataService.js";
+import DataService from "./DataService.js";
 const myDataService = new DataService();
 const url = "./glossary.json";
 const numChapters = 5;

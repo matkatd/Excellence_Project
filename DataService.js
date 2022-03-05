@@ -20,7 +20,7 @@ export default class DataService {
       });
   }
 
-  /** Returns data filtered */
+  /** Returns data filtered by a specific chapter */
   getByChapter(content, chapterNum) {
     // Only grab the objects that have the given chapterNum
     const filtered = content.filter((item) => item.chapter === chapterNum);
