@@ -21,15 +21,24 @@ export default class DataService {
   }
 
   /** Returns data filtered */
-  async getByChapter(content, chapterNum) {
+  getByChapter(content, chapterNum) {
     // Only grab the objects that have the given chapterNum
     const filtered = content.filter((item) => item.chapter === chapterNum);
     const sorted = _.sortBy(filtered, "term"); // Sort the objects alphabetically by the term name
     return sorted;
   }
 
-  async getAllTerms(content) {
+  getAllTerms(content) {
     let terms = content.map((element) => element.term);
     return terms;
+  }
+
+  searchData(content, query) {
+    query = query.toLowerCase();
+    const result = content.filter((element) => {
+      return element.term.toLowerCase().indexOf(query) >= 0;
+    });
+    console.log(result);
+    return result;
   }
 }

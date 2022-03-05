@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: Baskerville;
   src: url("./Baskerville.ttc");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: Futura;
   src: url("./Futura.ttc");
-}
+} */
 
 :root {
   --header-font: Futura;
@@ -98,8 +98,61 @@ dt {
   font-style: italic;
 }
 
+.search-stuff {
+  margin: 1em auto;
+  position: relative;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  max-width: 100ch;
+
+  /* width: 60%; */
+}
+
+#searchQuery {
+  width: 60%;
+  padding: 1rem;
+  border: none;
+  font-family: Futura;
+  font-size: 1em;
+}
+
+#searchButton {
+  padding: 0.8em;
+  background-color: #aacae3;
+  border: none;
+  font-family: Futura;
+  font-size: 1em;
+}
+
 @media only screen and (max-width: 850px) {
+  h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
   .title {
     font-size: 2em;
+  }
+
+  #searchQuery {
+    font-size: 1em;
+    width: 80%;
+    /* width: auto; */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .search-stuff {
+    /* max-width: 80ch; */
+    width: 100%;
+  }
+  #searchQuery {
+    font-size: 0.75em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }

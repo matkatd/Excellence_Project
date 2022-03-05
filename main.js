@@ -4,12 +4,14 @@ const url = "./glossary.json";
 const numChapters = 5;
 const content = await myDataService.getContent(url);
 
-async function buildGlossary(content, numChapters) {
+function buildGlossary(content, numChapters) {
+  const glossary = document.querySelector(".glossary"); // Select the HTML element that will contain the glossary
+  glossary.innerHTML = "";
   for (let i = 0; i <= numChapters; i++) {
     // Divide the glossary into sections based on chapter
-    const data = await myDataService.getByChapter(content, i);
+    const data = myDataService.getByChapter(content, i);
     const chapterName = getChapterName(i); // Get the correct name based on the chapter number
-    const glossary = document.querySelector(".glossary"); // Select the HTML element that will contain the glossary
+
     let chapterSection = `<h3>${chapterName}</h3> <dl>`;
     data.forEach((element) => {
       // Create a new <dt> for each term
@@ -46,4 +48,17 @@ function getChapterName(chapterNum) {
   }
 }
 
+function searchData() {
+  let queryString = document.querySelector("#searchQuery").value;
+  const results = myDataService.searchData(content, queryString);
+  buildGlossary(results, numChapters);
+}
+
+document.querySelector("#searchButton").addEventListener("click", searchData);
+document.querySelector("#searchQuery").addEventListener("keydown", (e) => {
+  // console.log(e);
+  if (e.key === "Enter") {
+    searchData();
+  }
+});
 buildGlossary(content, numChapters);
