@@ -428,5 +428,15 @@
     "term": "Unicode",
     "definition": "The original Unicode Standard used 2 bytes/character, and was thus able to represent 65,536 characters. It includes 7-bit ASCII as a subset. The most recent version of Unicode uses 18 bits, but only about 144,000 of the possible 262,144 (2<sup>18</sup>) characters are presently defined.",
     "chapter": 1
+  },
+    {
+    "term": "Algorithm",
+    "definition": "A step-by-step procedure for accomplishing a certain task, and is guaranteed to terminate. Each step is explicitly stated and can be executed by a computer",
+    "chapter": 5
+  },
+    {
+    "term": "Opcode",
+    "definition": "The part of an instruction that tells the computer the operation that the instruction is supposed to perform",
+    "chapter": 5
   }
 ]
